@@ -33,5 +33,4 @@ const selectionSort = (arr) => {
   }
   return arr
 }
-
 console.log('Ascending selection Sort: ', selectionSort(arr))
