@@ -60,13 +60,16 @@ class LinkedList {
     }
     console.log(`${current.value} is at index ${ctr}`);
   }
+  
   circular(head, target) {
     let start = head, trgt = head;
-    while (start.next != null) start = start.next;
-    while (trgt.next.value != target) trgt = trgt.next;
+    while (start.next!= null) start = start.next;
+    while (trgt.value != target) trgt = trgt.next;
     start.next = trgt;
     return head;
   }
+
+  
 }
 
 let l1 = new LinkedList()
@@ -77,13 +80,14 @@ l1.insert(3)
 l1.insert(4)
 l1.insert(5)
 
-l1.circular(l1.head, 4)
+l1.circular(l1.head, 2)
+// l1.printList()
 
 function hasCycle(head) {
   if (!head || !head.next) return false
   let slow = head, fast = head.next;
   while (fast && fast.next) {
-    if (slow === fast) return fast;
+    if (slow === fast) return true;
     slow = slow.next;
     fast = fast.next.next;
   }
