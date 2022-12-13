@@ -23,6 +23,12 @@ const addNode = (airport) => {
 
 }
 
+// const obj=new Map()
+// obj.set('a',[3,4])
+
+// console.log(obj.get('a'))
+
+
 // Making connections
 const addEdgeNode = (source, destination) => {
   routesGraph.get(source).push(destination)
