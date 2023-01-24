@@ -72,8 +72,10 @@ class LinkedList {
   
 }
 
-let l1 = new LinkedList()
+let l1 = new LinkedList() //l1 ek object h linklist type ka
 let l2 = new LinkedList()
+
+l1.
 l1.insert(1)
 l1.insert(2)
 l1.insert(3)
